@@ -1,0 +1,4 @@
+@mixin magic-border {
+    //box-shadow: 0 0 11px 1px var(--light-color);\
+    border: 2px solid var(--light-color);
+}

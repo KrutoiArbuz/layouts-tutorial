@@ -1,0 +1,112 @@
+.search {
+
+    margin-right: 8px;
+    position: relative;
+
+    &__input {
+        @include magic-border;
+        padding: 12px;
+        font-weight: 300;
+        font-size: 15px;
+        min-width: 375px;
+        width: 100%;
+        border-radius: 8px;
+        background-color: var(--dark-color);
+        color: var(--light-color);
+
+        @include small-tablet {
+            font-size: 13px;
+        }
+
+
+
+        &::placeholder {
+            color: var(--light-color);
+
+
+        }
+
+
+
+    }
+
+    &__input-mini {
+        display: none;
+        @include magic-border;
+        padding: 12px;
+        font-weight: 300;
+        font-size: 13px;
+        margin-right: 8px;
+        width: 100%;
+        border-radius: 8px;
+        background-color: var(--dark-color);
+        color: var(--light-color);
+
+        @include mini-tablet {
+            display: block;
+        }
+
+        @include small-mobile {
+            padding: 10px;
+            font-size: 12px;
+        }
+    }
+
+    &__dropdown {
+        display: none;
+        z-index: 30;
+        position: absolute;
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        border-radius: 8px;
+        top: 50px;
+        @include magic-border;
+        width: 100%;
+        padding: 12px;
+    }
+
+    &__subtitle {
+        color: var(--light-color);
+        margin: 0 0 12px 0;
+        font-weight: 600;
+        font-size: 15px;
+
+        @include small-tablet {
+            font-size: 13px;
+        }
+    }
+
+    &__list {
+        max-height: 100px;
+    }
+
+    &__result {
+        width: 97%;
+        margin: 0 0 15px 0;
+
+    }
+
+    .simplebar-track.simplebar-vertical {
+
+        border-radius: 40px;
+        width: 3px;
+
+        background: var(--dark-color);
+    }
+
+    .simplebar-scrollbar::before {
+        left: 0;
+        right: 0;
+        opacity: 1;
+        border-radius: 40px;
+        width: 3px;
+        background-color: var(--light-color);
+
+    }
+
+    .active {
+        display: block;
+
+    }
+
+}

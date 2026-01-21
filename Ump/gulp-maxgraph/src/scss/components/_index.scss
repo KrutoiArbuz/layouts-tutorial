@@ -1,0 +1,14 @@
+.index {
+
+    &__main {
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+
+    &__site-container {
+        @include image-set('../img/back');
+        @include bg-cover;
+        align-items: center;
+    }
+}

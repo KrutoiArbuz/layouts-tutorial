@@ -1,0 +1,185 @@
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 10px 0;
+    background-color: var(--dark-color);
+
+    box-shadow: 0 0 11px 1px var(--light-color);
+
+    &__container {
+        @include flex-all-sb;
+        align-items: center;
+    }
+
+    &__logo {
+        height: 65px;
+        width: 65px;
+        display: flex;
+        align-items: center;
+
+
+        &-text {
+            font-weight: 700;
+            font-size: 15px;
+            color: var(--light-color);
+            margin-left: 10px;
+
+        }
+
+        @include mobile {
+            height: 50px;
+            width: 50px;
+
+            .header__logo-text {
+                margin-left: 5px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    &__function {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    &__account {
+        flex: 0 1;
+        position: relative;
+
+        &-button {
+            @include magic-border;
+            padding: 0px 7px;
+            font-weight: 300;
+            font-size: 15px;
+            border-radius: 8px;
+            background-color: var(--dark-color);
+            color: var(--light-color);
+            display: flex;
+            align-items: center;
+            min-width: 135px;
+
+            height: 100%;
+
+
+
+            picture {
+                width: 32px;
+                height: 32px;
+                margin-right: 14px;
+
+                @include small-tablet {
+
+                    width: 28px;
+                    height: 28px;
+
+
+                }
+
+                @include mobile {
+                    margin-right: 10px;
+                }
+            }
+
+            @include small-tablet {
+                min-width: 114px;
+
+                p {
+                    font-size: 13px;
+                }
+            }
+
+            @include mobile {
+                padding: 0px 5px;
+                min-width: 105px;
+            }
+
+            @include small-mobile {
+                p {
+                    font-size: 12px;
+                }
+            }
+
+            p {
+                margin: 0;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                //НУ ТУТ ЧЕ ТО ДЕЛАТЬ НАДО, Я ХЗ
+                max-width: 100px;
+            }
+
+            .image {
+
+                border-radius: 100%;
+            }
+
+
+
+            &:hover {
+
+                transition: 0.05s ease-in-out;
+                background-color: var(--light-color);
+                color: var(--dark-color)
+            }
+
+            &:not(:hover) {
+                transition: 0.15s ease-in-out;
+            }
+
+            &:active {
+
+                @include magic-border;
+                transition: 0.05s ease-in-out;
+                background-color: var(--dark-color);
+                color: var(--light-color)
+            }
+
+
+        }
+
+
+    }
+
+
+
+    &__nav {
+
+
+        display: none;
+        z-index: 30;
+        position: absolute;
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        border-radius: 8px;
+        top: 50px;
+        @include magic-border;
+        width: 100%;
+        padding: 12px;
+
+
+
+        @include small-tablet {
+
+            padding: 10px 12px;
+        }
+
+        @include mobile {
+            top: 45px;
+            padding: 6px 7px;
+        }
+    }
+
+    &__search {
+        @include mini-tablet {
+            display: none;
+        }
+    }
+
+    .active {
+        display: block;
+
+    }
+}

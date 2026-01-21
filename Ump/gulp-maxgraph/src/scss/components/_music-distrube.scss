@@ -1,0 +1,141 @@
+.music-distrube {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+
+    @include tablet {
+        &:nth-child(n+9) {
+            display: none;
+        }
+    }
+
+    @include medium-tablet {
+        &:nth-child(n+7) {
+            display: none;
+        }
+    }
+
+    @include big-mobile {
+        &:nth-child(n+5) {
+            display: none;
+        }
+    }
+
+    &:hover {
+
+        .music-distrube__album,
+        .music-distrube__group {
+
+            text-decoration: underline;
+
+        }
+    }
+
+    &__number {
+        position: absolute;
+        left: -22px;
+
+        font-weight: 700;
+        font-size: 22px;
+        color: var(--light-color);
+
+        &-10 {
+            left: -32px;
+        }
+
+        @include medium-desktop {
+            font-size: 18px;
+            left: -18px;
+
+            &-10 {
+                left: -28px;
+            }
+        }
+
+        @include small-tablet {
+            font-size: 16px;
+            left: -12px;
+        }
+
+        @include small-mobile {
+            font-size: 12px;
+        }
+    }
+
+    &__img {
+        margin-right: 8px;
+        width: 40px;
+        height: 40px;
+
+        .image {
+            border-radius: 5px;
+            max-width: none;
+        }
+
+
+    }
+
+
+    &__album {
+
+        //НУ ТУТ ЧЕ ТО ДЕЛАТЬ НАДО, Я ХЗ
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+
+
+        font-weight: 600;
+        font-size: 15px;
+        color: var(--light-color);
+        margin: 0 0 0px 0;
+        text-wrap: nowrap;
+
+        @include medium-desktop {
+            font-size: 14px;
+        }
+
+        @include small-tablet {
+            font-size: 13px;
+        }
+
+        @include small-mobile {
+            text-wrap: wrap;
+        }
+
+
+    }
+
+    &__group {
+        font-weight: 300;
+        font-size: 15px;
+        color: var(--light-color);
+        margin: 0;
+        margin: 0;
+
+
+        //НУ ТУТ ЧЕ ТО ДЕЛАТЬ НАДО, Я ХЗ
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+
+
+        @include medium-desktop {
+            font-size: 14px;
+        }
+
+        @include small-tablet {
+            font-size: 12px;
+        }
+
+        @include small-mobile {
+            text-wrap: wrap;
+        }
+    }
+
+
+
+
+}

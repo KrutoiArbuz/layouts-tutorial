@@ -1,0 +1,28 @@
+.nav {
+    &__item {
+        &:not(:last-child) {
+            margin: 0 0 10px 0;
+
+            @include small-tablet {
+                margin: 0 0 8px 0;
+            }
+        }
+
+        &:hover {
+            a {
+                border-bottom: solid 1px var(--light-color);
+            }
+        }
+
+    }
+
+    &__link {
+        font-size: 15px;
+        color: var(--light-color);
+        text-decoration: none;
+
+        @include small-tablet {
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,6 @@
+.logo {
+    .image {
+        border-radius: 8px;
+        @include magic-border;
+    }
+}

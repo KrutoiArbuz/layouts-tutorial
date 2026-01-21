@@ -1,0 +1,58 @@
+.order {
+    @include image-set('../img/percents');
+    padding: 87px 0;
+    background-color: var(--accent-color);
+    background-position: bottom center;
+    background-size: cover;
+
+    &__container {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+    }
+
+    &__left {
+        padding-left: 60px;
+        grid-column: 5 span;
+
+        @include high-tablet {
+            grid-column: 12 span;
+            padding-left: 0;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__title {
+        margin: 0;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 130%;
+        color: var(--light-color);
+        margin-bottom: 20px;
+    }
+
+    &__descr {
+        margin: 0;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        color: var(--light-color);
+    }
+
+    &__right {
+        display: flex;
+        justify-content: flex-end;
+        grid-column: 7 span;
+        padding-right: 60px;
+
+        @include high-tablet {
+            grid-column: 12 span;
+            padding-right: 0;
+            justify-content: flex-start;
+        }
+
+    }
+
+    &__form {
+        max-width: 500px;
+    }
+}

@@ -1,0 +1,142 @@
+.video-block {
+    margin-top: 25px;
+
+    @include small-tablet {
+        margin-top: 10px;
+
+    }
+
+    &__container {
+        position: relative;
+    }
+
+    &__video {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        background-color: red;
+        margin-bottom: 25px;
+        border-radius: 8px;
+
+        @include small-tablet {
+            font-size: 20px;
+
+        }
+
+        @include small-mobile {
+            margin-bottom: 8px;
+
+
+        }
+    }
+
+    &__information {}
+
+    &__title {
+
+        font-weight: 700;
+
+        color: var(--light-color);
+        font-size: 25px;
+        margin: 0 0 5px 0;
+
+
+
+
+        @include small-tablet {
+            font-size: 20px;
+
+        }
+
+        @include small-mobile {
+            font-size: 18px;
+
+
+        }
+    }
+
+    &__account {
+
+        font-weight: 600;
+        font-size: 16px;
+        text-decoration: underline;
+        text-decoration-skip-ink: none;
+        color: var(--light-color);
+
+        @include small-tablet {
+            font-size: 14px;
+
+        }
+
+        @include small-mobile {
+            font-size: 12px;
+
+
+        }
+    }
+
+    &__views {
+        font-weight: 300;
+        font-size: 13px;
+        color: var(--light-color);
+        margin: 10px 0px 16px 0;
+
+        @include small-tablet {
+            font-size: 11px;
+
+        }
+
+        @include small-mobile {
+            font-size: 10px;
+
+
+        }
+    }
+
+    &__descr {
+
+        padding: 12px 12px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+    }
+
+    &__descr-title {
+        margin: 0;
+        font-weight: 700;
+        font-size: 13px;
+        color: var(--light-color);
+        margin-bottom: 8px;
+
+        @include small-tablet {
+            font-size: 11px;
+
+        }
+
+        @include small-mobile {
+            font-size: 10px;
+
+
+        }
+    }
+
+    &__descr-text {
+        margin: 0;
+        font-weight: 300;
+        font-size: 13px;
+        color: var(--light-color);
+
+        a {
+            text-decoration: underline;
+        }
+
+        @include small-tablet {
+            font-size: 11px;
+
+        }
+
+        @include small-mobile {
+            font-size: 10px;
+
+
+        }
+    }
+}

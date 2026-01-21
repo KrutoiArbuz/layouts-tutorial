@@ -1,0 +1,32 @@
+// базовые подключения
+@import "vars";
+@import "mixins";
+@import "fonts";
+@import "settings";
+
+// подключения компонентов страницы
+@import "./components/site-container";
+@import "./components/main";
+@import "./components/index";
+@import "./components/logo";
+@import "./components/search";
+@import "./components/nav";
+@import "./components/grid1";
+@import "./components/slider";
+@import "./components/grid2";
+@import "./components/section-title";
+@import "./components/video-distrube";
+@import "./components/video-distrube-big";
+@import "./components/music-distrube";
+@import "./components/music-distrube-big";
+@import "./components/btn";
+@import "./components/form";
+@import "./components/modal";
+@import "./components/header";
+@import "./components/search-block";
+@import "./components/advertisement";
+@import "./components/account-bg";
+@import "./components/video-block";
+@import "./components/comment-block";
+@import "./components/user-comment";
+@import "./components/footer";

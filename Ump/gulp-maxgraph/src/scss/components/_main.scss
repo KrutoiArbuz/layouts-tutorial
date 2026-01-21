@@ -1,0 +1,18 @@
+.main {
+    flex: 1 1 auto;
+    padding: 100px 0 0 0;
+
+    @include tablet {
+        padding: 90px 0 0 0;
+    }
+
+
+
+    @include big-mobile {
+        padding: 80px 0 0 0;
+    }
+
+    &.active {
+        display: none;
+    }
+}

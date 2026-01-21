@@ -1,0 +1,37 @@
+.search-block {
+    flex: 1 1 auto;
+    padding: 100px 0 270px 0;
+
+    @include small-mobile {
+        padding: 100px 0 310px 0;
+    }
+
+    &__search {
+        margin-right: 0px;
+    }
+
+    &__input {
+        min-width: 100%;
+
+    }
+
+    &.active {
+        display: none;
+    }
+
+    &__dropdown {
+        &.active {
+            display: block;
+        }
+    }
+
+    &__list {
+        max-height: 220px;
+    }
+
+    @include small-mobile {
+        &__input {
+            font-size: 11px;
+        }
+    }
+}

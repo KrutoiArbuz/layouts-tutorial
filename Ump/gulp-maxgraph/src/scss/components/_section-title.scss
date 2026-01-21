@@ -1,0 +1,25 @@
+.section-title {
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--light-color);
+
+    margin-top: 20px;
+
+
+
+    @include tablet {
+        font-size: 20px;
+
+
+    }
+
+
+
+    @include big-mobile {
+
+        font-size: 18px;
+    }
+
+
+
+}

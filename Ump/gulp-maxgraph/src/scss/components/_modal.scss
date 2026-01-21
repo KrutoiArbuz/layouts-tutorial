@@ -1,0 +1,84 @@
+.graph-modal.is-open {
+    cursor: default;
+}
+
+.modal-base {
+    background-color: var(--dark-color);
+    box-shadow: 0 0 11px 1px var(--light-color);
+
+
+    padding: 25px;
+
+
+
+    &.logreg {
+        max-width: 307px;
+
+        .graph-modal__close {
+            display: none;
+        }
+
+    }
+
+
+    &__logo {
+        margin-bottom: 25px;
+    }
+
+
+
+    &__title {
+        font-weight: 600;
+        font-size: 25px;
+        color: var(--light-color);
+        margin: 0;
+    }
+
+    &__text {
+        color: var(--light-color);
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+
+        &.mgdw {
+            margin-bottom: 0px;
+        }
+    }
+
+
+
+    &__list {
+        color: var(--light-color);
+        font-weight: 400;
+        font-size: 16px;
+        color: #fff;
+        margin-left: -1em;
+
+        & li:not(:last-child) {
+            margin-bottom: 5px;
+        }
+
+        &.mgdw {
+            margin-bottom: 50px;
+        }
+
+    }
+
+    @include tablet {
+        &__title {
+            font-size: 20px;
+        }
+
+        &__text {
+            font-size: 12px;
+        }
+
+        &__list {
+            font-size: 12px;
+
+            &.mgdw {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

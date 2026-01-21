@@ -1,0 +1,112 @@
+.btn {
+
+    background-color: var(--light-color);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    padding: 12px 25px;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--dark-color);
+    text-align: center;
+
+
+
+    @include small-tablet {
+        padding: 12px 20px;
+        font-size: 13px;
+
+    }
+
+    @include small-mobile {
+        padding: 12px 18px;
+        font-size: 12px;
+
+    }
+
+    &:hover {
+        box-shadow: 0 0 11px 1px var(--light-color);
+        transition: 0.1s ease-in-out;
+
+    }
+
+    &:not(:hover) {
+        transition: 0.1s ease-in-out;
+    }
+
+    &:active {
+
+        box-shadow: 0 0 11px 1px var(--light-color);
+        transition: 0.05s ease-in-out;
+        background-color: var(--dark-color);
+        color: var(--light-color)
+    }
+
+    &-dark {
+        @include magic-border;
+        padding: 0px 7px;
+        font-weight: 300;
+        font-size: 15px;
+        border-radius: 8px;
+        background-color: var(--dark-color);
+        color: var(--light-color);
+        display: flex;
+        align-items: center;
+        min-width: 135px;
+
+        height: 100%;
+
+        @include small-tablet {
+            min-width: 113px;
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        picture {
+            width: 32px;
+            height: 32px;
+            margin-right: 15px;
+
+            @include small-tablet {
+                margin-right: 10px;
+                width: 28px;
+                height: 28px;
+            }
+
+        }
+
+
+
+        .image {
+
+            border-radius: 100%;
+        }
+
+
+        &:hover {
+
+            transition: 0.05s ease-in-out;
+            background-color: var(--light-color);
+            color: var(--dark-color)
+        }
+
+        &:not(:hover) {
+            transition: 0.15s ease-in-out;
+        }
+
+        &:active {
+
+            @include magic-border;
+            transition: 0.05s ease-in-out;
+            background-color: var(--dark-color);
+            color: var(--light-color)
+        }
+    }
+
+    @include medium-tablet {
+        padding: 10px 20px;
+    }
+}

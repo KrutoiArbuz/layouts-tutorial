@@ -1,0 +1,103 @@
+.music-distrube-big {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+
+    &:hover {
+
+        .music-distrube-big__album,
+        .music-distrube-big__group {
+
+            text-decoration: underline;
+
+        }
+    }
+
+    &__img {
+
+        width: 145px;
+        height: 145px;
+
+
+        .image {
+            border-radius: 7px;
+
+            height: inherit;
+        }
+
+        @include medium-desktop {
+
+            width: 130px;
+            height: 130px;
+
+        }
+
+        @include small-tablet {
+
+            width: 111px;
+            height: 111px;
+
+        }
+
+        @include small-mobile {
+
+            width: 82px;
+            height: 82px;
+
+        }
+    }
+
+
+    &__album {
+
+        font-weight: 600;
+        font-size: 15px;
+        color: var(--light-color);
+        margin: 0 0 0px 0;
+        text-wrap: nowrap;
+        text-wrap: wrap;
+        word-wrap: break-word;
+        max-width: 140px;
+
+        @include medium-desktop {
+            font-size: 14px;
+        }
+
+        @include small-tablet {
+            font-size: 13px;
+        }
+
+        @include small-mobile {
+            text-wrap: wrap;
+        }
+
+
+    }
+
+    &__group {
+        font-weight: 300;
+        font-size: 15px;
+        color: var(--light-color);
+        margin: 0;
+        text-wrap: wrap;
+        word-wrap: break-word;
+        max-width: 140px;
+
+
+
+
+
+        @include medium-desktop {
+            font-size: 14px;
+        }
+
+        @include small-tablet {
+            font-size: 12px;
+        }
+
+        @include small-mobile {
+            text-wrap: wrap;
+        }
+    }
+}
