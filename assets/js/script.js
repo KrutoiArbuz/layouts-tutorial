@@ -70,9 +70,6 @@ function renderProjects(projects) {
                     <h3 class="card-information__medium-title medium-title">${title}</h3>
                     <p class="card-information__card-text card-text">${info.describe}</p>
                 </div>
-                <div>
-                    ${info.tech.join(', ')}
-                </div>
             </a>
         `;
         cardsContainer.insertAdjacentHTML('beforeend', cardHTML);
