@@ -11,11 +11,11 @@ const dataBase = {
         "CSS3": { icon: iconUrl + 'css3.svg', color: "#87A6F6" },
     },
     projects: {
-        "Lawliet": { tech: ["HTML5", "CSS3", "JS"], link: "./Lawliet", describe: "Корпоративный лендинг", imgs: [imgProjectUrl + "/Lawliet/main.png"] },
-        "PicProject": { tech: ["HTML5", "CSS3", "JS"], link: "./PicProject", describe: "Проект редактора фото", imgs: [imgProjectUrl + "/PicProject/main.png"] },
-        "Relvise": { tech: ["HTML5", "CSS3", "JS"], link: "./Relvise", describe: "Бизнес лендинг", imgs: [imgProjectUrl + "/Relvise/main.png"] },
-        "Robo-School": { tech: ["HTML5", "SCSS", "JS", "Gulp"], link: "./Robo-School", describe: "Школа робототехники", imgs: [imgProjectUrl + "/Robo-School/main.png"] },
-        "Ump": { tech: ["HTML5", "SCSS", "JS", "Gulp"], link: "./Ump", describe: "Музыкальная платформа", imgs: [imgProjectUrl + "/Ump/main.png"] },
+        "Lawliet": { tech: ["HTML5", "CSS3", "JS"], link: "../Lawliet/index.html", describe: "Корпоративный лендинг", imgs: [imgProjectUrl + "/Lawliet/main.png"] },
+        "PicProject": { tech: ["HTML5", "CSS3", "JS"], link: "../PicProject/index.html", describe: "Проект редактора фото", imgs: [imgProjectUrl + "/PicProject/main.png"] },
+        "Relvise": { tech: ["HTML5", "CSS3", "JS"], link: "../Relvise/index.html", describe: "Бизнес лендинг", imgs: [imgProjectUrl + "/Relvise/main.png"] },
+        "Robo-School": { tech: ["HTML5", "SCSS", "JS", "Gulp"], link: "../Robo-School/app/index.html", describe: "Школа робототехники", imgs: [imgProjectUrl + "/Robo-School/main.png"] },
+        "Ump": { tech: ["HTML5", "SCSS", "JS", "Gulp"], link: "../Ump/app/index.html", describe: "Музыкальная платформа", imgs: [imgProjectUrl + "/Ump/main.png"] },
     }
 }
 
@@ -69,6 +69,9 @@ function renderProjects(projects) {
                 <div class="layout-card__card-information card-information">
                     <h3 class="card-information__medium-title medium-title">${title}</h3>
                     <p class="card-information__card-text card-text">${info.describe}</p>
+                </div>
+                <div>
+                    ${info.tech.join(', ')}
                 </div>
             </a>
         `;
