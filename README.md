@@ -14,7 +14,7 @@
 
 ## 🛠 Изучить коллекцию
 
-Ссылка: 
+Ссылка: [krutoiarbuz.github.io/layouts-tutorial/](https://krutoiarbuz.github.io/layouts-tutorial/)
 
 ## 📁 Структура репозитория
 
